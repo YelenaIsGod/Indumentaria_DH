@@ -8,40 +8,8 @@
     <title>Unisex</title>
 </head>
 <body>
-    <header>
-        <div class="row-header">
-            <div class="logo" id="logo">   
-                <a href="/">
-                    <img src="/images/logo.png" alt="logo de Unisex">
-                </a>
-            </div>
-
-            <div class="search-bar">
-                <form action="GET">
-                    <input type="text" id="search" placeholder="Buscar">
-                    <div class="submit clickable">
-                        <i class="fa fa-search"></i>
-                    </div>
-                </form>
-            </div>
-
-            <nav class="navbar">
-                <ul class="navbar-items">
-                    <li><a href="/registro">Registrarse</a></li>
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="#">Vender</a></li>
-                    <li><a href="#">Ayuda</a></li>
-                </ul>
-            </nav>
-
-            <div class="burger-menu-container">
-                <button class="burger-menu">
-                    <i class="fa fa-bars burger"></i>
-                </button>
-            </div>
-        </div>
-        
-    </header>
+    <!--HEADER-->
+    <%- include('./partials/header.ejs') %>
 
     <div>
         <img src="images/banner.png" alt="banner">
@@ -100,19 +68,6 @@
             </div>
         </section>
     </main>
-
-    <footer>
-        <div class="footer-items">
-            <div class="contact-information">
-                <h5>Contactanos</h5>
-                <p>ventas@negocio.com</p>
-                <p>Ubicacion</p>
-            </div>
-            <div class="policies">
-                <p>Politicas de Privacidad</p>
-                <p>Politicas de Devolucion</p>
-            </div>
-        </div>
-    </footer>
+    <%- include('./partials/footer.ejs') %>
 </body>
 </html>
