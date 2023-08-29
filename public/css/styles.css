@@ -30,7 +30,7 @@ header {
 footer {
     padding-top: 1em;
     background-color: black; 
-    padding-bottom: 1.3em; 
+    padding-bottom: 1.2em; 
 }
   
 p {
@@ -68,7 +68,6 @@ nav ul li a {
     display: flex; 
     flex-direction: column; 
     justify-content: space-between; 
-    gap: 1.5em; 
     padding: 1.5em; 
 }
   
@@ -193,6 +192,14 @@ nav ul li a {
 footer p, footer h5 {
     color: white;
     margin-bottom: 5px;
+}
+
+footer p {
+  font-size: 0.9em;
+}
+
+footer h5 {
+  font-size: 1.2em;
 }
 
   @media (min-width: 361px) {

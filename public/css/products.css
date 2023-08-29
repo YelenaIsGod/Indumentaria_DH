@@ -1,0 +1,94 @@
+* {
+   box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid antiquewhite;
+}
+
+body {
+    background-color: antiquewhite;
+    font-weight: 300;
+}
+
+.product-detail-img {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.product-detail {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.products-wrapper {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.product-detail-info {
+    border-left: 1px solid antiquewhite;
+    padding: 15px;
+}
+
+.product-detail-title {
+    font-weight: 400;
+    font-size: 1.5em;
+}
+
+.product-detail-price {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.product-detail-description {
+    padding: 15px;
+    font-size: 1em;
+    line-height: 1.3;
+}
+
+.products-title {
+    font-size: 2.4em;
+    font-weight: 400;
+    color: grey;
+}
+
+.buy-now-button {
+    background-color: #512B81;
+    font-size: 1.2em;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: none;
+}
+
+.action-button {
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    margin-top: 15px;
+}
+
+.action-button.edit {
+    background-color: #FF6666;
+}
+
+.action-button.delete {
+    background-color: #FF6666;
+}

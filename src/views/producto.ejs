@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+	<link rel="stylesheet" href="/css/products.css">
+	<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <title>Unisex</title>
+<body>
+	<!-- Header -->
+	<%- include('./partials/header.ejs') %>
+	<!-- /Header -->
+
+	<!-- todos los productos -->
+	<main class="container products-wrapper">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="products-title">Article: </h2>
+			</div>
+		</div>
+		<div class="product-detail">
+			<div class="row">
+				<div class="col-12 col-lg-8">
+					<img src="images/buzo.jpg" alt="imagen-producto" class="product-detail-img">
+				</div>
+				<div class="col-12 col-lg-4">
+					<article class="product-detail-info">
+						<h2 class="product-detail-title">ARTICLE TITLE</h2>
+						<p class="product-detail-price">$20000</p>
+						<p class="product-detail-description">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident non temporibus placeat laborum possimus, voluptas odit sequi, ipsam est earum facilis repellendus aliquam excepturi cum quas, quisquam in minus maiores!
+						</p>
+						<a href="#" class="buy-now-button">COMPRAR AHORA</a>
+						<hr>
+		
+						<a href="#" class="action-button edit">EDITAR PRODUCTO</a>
+						<form action="#" method="POST" style="display: inline-flex">
+							<button type="submit" class="action-button delete">ELIMINAR</button>
+						</form>
+					</article>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!-- /todos los productos -->
+
+	<!-- footer -->
+	<%- include('partials/footer') %>
+	<!-- /footer -->
+</body>	
+</html>
