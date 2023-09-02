@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
     <title>Unisex</title>
 </head>
+
 <body>
     <!--HEADER-->
     <%- include('./partials/header.ejs') %>
 
-    <div>
-        <img src="images/banner.png" alt="banner">
-    </div>
+        <div>
+            <img src="images/banner.png" alt="banner">
+        </div>
 
-    <main>
-        <section class="products-section">
-            <h3 class="section-title">Destacados</h3>
-            <div class="products">
-                <div class="product">
-                    <div class="img-product">
-                        <img width=73% src="images/buzobordado.jpg" alt="product">
+        <main>
+            <section class="products-section">
+                <h3 class="section-title">Destacados</h3>
+                <div class="products">
+                    <div class="product">
+                        <div class="img-product">
+                            <img width=73% src="images/buzobordado.jpg" alt="product">
+                        </div>
+                        <div class="product-description-container">
+                            <p class="product-name">Buzo bordado</p>
+                            <p class="price">$18000</p>
+                            <p class="discount">30%</p>
+                            <p class="talles">TALLES: M - S - XS</p>
+                        </div>
                     </div>
-                    <div class="product-description-container">
-                        <p class="product-name">Buzo bordado</p>
-                        <p class="price">$18000</p>
-                        <p class="discount">30%</p>
-                        <p class="talles">TALLES: M - S - XS</p>
+                    <div class="product">
+                        <div class="img-product">
+                            <img width=75% src="images/imagescampera.jpg" alt="camperon">
+                        </div>
+                        <div class="product-description-container">
+                            <p class="product-name">Camperon</p>
+                            <p class="price">$18000</p>
+                            <p class="discount">30%</p>
+                            <p class="talles">TALLES: XL - M - S - XS</p>
+                        </div>
                     </div>
-                </div>
-                <div class="product">
-                    <div class="img-product">
-                        <img width=75% src="images/imagescampera.jpg" alt="camperon">
-                    </div>
-                    <div class="product-description-container">
-                        <p class="product-name">Camperon</p>
-                        <p class="price">$18000</p>
-                        <p class="discount">30%</p>
-                        <p class="talles">TALLES: XL - M - S - XS</p>
-                    </div>
-                </div>
-                    
-                <div  class="product">
-                    <div class="img-product">
-                        <img width=87% src="images/chomba.jpg" alt="product">
-                    </div>
-                    <div class="product-description-container">
-                        <p class="product-name">Chomba</p>
-                        <p class="price">$1800</p>
-                        <p class="discount">30%</p>
-                        <p class="talles">TALLES: M - S - XS</p>
-                    </div>
-                </div>
 
-                <div class="product">
-                    <div class="img-product">
-                        <img width=100% src="images/buzo.jpg" alt="product">
+                    <div class="product">
+                        <div class="img-product">
+                            <img width=87% src="images/chomba.jpg" alt="product">
+                        </div>
+                        <div class="product-description-container">
+                            <p class="product-name">Chomba</p>
+                            <p class="price">$1800</p>
+                            <p class="discount">30%</p>
+                            <p class="talles">TALLES: M - S - XS</p>
+                        </div>
                     </div>
-                    <div class="product-description-container">
-                        <p class="product-name">buzo</p>
-                        <p class="price">$18000</p>
-                        <p class="discount">30%</p>
-                        <p class="talles">TALLES: M - S - XS</p>
+
+                    <div class="product">
+                        <div class="img-product">
+                            <img width=100% src="images/buzo.jpg" alt="product">
+                        </div>
+                        <div class="product-description-container">
+                            <p class="product-name">buzo</p>
+                            <p class="price">$18000</p>
+                            <p class="discount">30%</p>
+                            <p class="talles">TALLES: M - S - XS</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <%- include('./partials/footer.ejs') %>
+                <!--carrito de compras-->
+                <%- include('./partials/carrito.ejs')%>
+
+            </section>
+        </main>
+        <%- include('./partials/footer.ejs') %>
 </body>
+
 </html>

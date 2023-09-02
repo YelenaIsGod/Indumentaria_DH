@@ -126,9 +126,12 @@ nav ul li a {
     display: flex; 
     gap: 10px;
     flex-direction: column;  
-    flex-wrap: wrap;
+    flex-wrap: wrap
   }
-  
+  .products{
+    width: 100%;
+  }
+
   .header-item {
     text-align: center; 
     width: 100%;
@@ -216,6 +219,7 @@ footer h5 {
     flex-direction: row; 
     justify-content: space-between;
     align-items: flex-start;
+    width: 100%;
     }
   
     .product {
