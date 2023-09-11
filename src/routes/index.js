@@ -1,22 +1,12 @@
 const express = require('express');
-const {indexController, loginController, registerController, productoController, carritoController} = require('../controllers/index');
+const index = require('../controllers/index');
 
-const indexRouter = express.Router();
-const loginRouter = express.Router();
-const registerRouter = express.Router();
-const productoRouter = express.Router();
-const carritoRouter = express.Router();
+const router = express.Router();
 
-indexRouter.get('/', indexController);
-loginRouter.get('/', loginController);
-registerRouter.get('/', registerController);
-productoRouter.get('/', productoController);
-carritoRouter.get('/', carritoController);
+router.get('/', index.indexController);
+router.get('/register', index.registerController);
+router.get('/login', index.loginController);
+router.get('/detail', index.productoController);
+router.get('/carrito', index.carritoController);
 
-module.exports = {
-    indexRouter,
-    loginRouter,
-    registerRouter,
-    productoRouter,
-    carritoRouter
-};
+module.exports = router;
