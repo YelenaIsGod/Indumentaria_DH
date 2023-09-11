@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="/css/products.css">
 	<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
-    <title>Unisex</title>
+    <title><%= product.name %></title>
 <body>
 	<!-- Header -->
 	<%- include('./partials/header.ejs') %>
@@ -22,14 +22,14 @@
 		<div class="product-detail">
 			<div class="row">
 				<div class="col-12 col-lg-8">
-					<img src="images/campera.jpg" alt="imagen-producto" class="product-detail-img">
+					<img src="/images/products/<%= product.image %>" alt="imagen-producto" class="product-detail-img">
 				</div>
 				<div class="col-12 col-lg-4">
 					<article class="product-detail-info">
-						<h2 class="product-detail-title">ARTICLE TITLE</h2>
-						<p class="product-detail-price">$20000</p>
+						<h2 class="product-detail-title"><%= product.name %></h2>
+						<p class="product-detail-price">$<%= product.price %></p>
 						<p class="product-detail-description">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident non temporibus placeat laborum possimus, voluptas odit sequi, ipsam est earum facilis repellendus aliquam excepturi cum quas, quisquam in minus maiores!
+							<%= product.description %>
 						</p>
 						<a href="#" class="buy-now-button">COMPRAR AHORA</a>
 						<hr>

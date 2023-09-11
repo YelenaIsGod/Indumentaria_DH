@@ -9,10 +9,6 @@ const index = {
         res.render('index');
     },
     
-    productoController: function (req, res) {
-        res.render('detail');
-    },
-    
     carritoController: function (req, res) {
         res.render('carrito');
     }
