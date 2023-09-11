@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    
+    <!--HEADER-->
+    <%- include('./partials/header.ejs') %>
+
+    <main>
+        <div class="login-contenedor">
+            <h3>Unisex</h3>
+            <h2 class="login-titulo">Iniciar Sesion</h2>
+            <form action="/login" method="GET">
+                <div class="login-formulario">
+                    <div class="user-contenedor">
+                        <input type="email" id="nombreDeUsuario" class="input" placeholder="usuario@gmail.com">
+                        <label for="name" class="user-datos">Nombre de Usuari@</label>
+                        
+                    </div>
+                    <div class="password-contenedor">
+                        <input type="password"id="contraseña" class="input" placeholder="agua1234!">
+                        <label for="contraseña" class="user-datos">Contraseña</label>
+                        
+                    </div>
+                    <div class="buttons-contenedor">
+                        <button type="submit" class="button-send">Enviar</button>
+                    </div>
+                </div>
+            </form>               
+            <p class="login-registrarse">¿Aun no tienes cuenta?<a href="/register">Entra aqui</a></p>
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

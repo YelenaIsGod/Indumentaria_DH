@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <title>Unisex</title>
+</head>
+<body>
+    <!--HEADER-->
+    <%- include('./partials/header.ejs') %>
+
+    <main>
+        <section class="products-section">
+            <h3 class="section-title">Todos los productos</h3>
+            <div class="products">
+                <% products.forEach(product => { %>
+                    <div class="product">
+                        <div class="img-product">
+                            <img width=73% src="images/<%= product.image %>" alt="product">
+                        </div>
+                        <div class="product-description-container">
+                            <p class="product-name"><%= product.name %></p>
+                            <p class="price">$<%= product.price %></p>
+                            <p class="discount"><%= product.discount %>%</p>
+                        </div>
+                    </div>
+                <% }); %>
+            </div>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

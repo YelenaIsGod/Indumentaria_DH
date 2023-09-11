@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/carrito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <title>Unisex</title>
+</head>
+<body>
+    <!--HEADER-->
+    <%- include('./partials/header.ejs') %>
+
+    <div>
+        <img src="images/banner.png" alt="banner">
+    </div>
+
+    <main>
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>tu carrito</h2>
+            </div>
+        
+            <div class="carrito-items">
+                <div class="carrito-item">
+                    <img src="images/buzo-negro.jpeg" alt="" width="30px">
+                    <div class="carrito-item-detalle">
+                        <span class="carrito-item-titulo">buzo</span>
+                        <div class="selector-cantidad">
+                            <i class="...... restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad">
+                            <i class="... sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class=".... borrar"></i>
+                    </span>
+                </div>
+        
+                <div class="carrito-item">
+                    <img src="images/buzobordado.jpg" alt="" width="30px">
+                    <div class="carrito-item-detalle">
+                        <span class="carrito-item-titulo">Buzo bordado</span>
+                        <div class="selector-cantidad">
+                            <i class="...... restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad">
+                            <i class="... sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class=".... borrar"></i>
+                    </span>
+                </div>
+        
+                <div class="carrito-item">
+                    <img src="images/sudadera.jpg" alt="" width="30px">
+                    <div class="carrito-item-detalle">
+                        <span class="carrito-item-titulo">chomba</span>
+                        <div class="selector-cantidad">
+                            <i class="...... restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad">
+                            <i class="... sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$1.800</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class=".... borrar"></i>
+                    </span>
+                </div>
+        
+                <div class="carrito-item">
+                    <img src="images/campera.jpg" alt="" width="30px">
+                    <div class="carrito-item-detalle">
+                        <span class="carrito-item-titulo">Camperon</span>
+                        <div class="selector-cantidad">
+                            <i class="...... restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad">
+                            <i class="... sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class=".... borrar"></i>
+                    </span>
+                </div>
+            </div>
+        
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>tu total</strong>
+                    <span class="carrito-precio-total">
+                        $55.800,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar<i class=".....bag-shopping"></i></button>
+            </div>
+        </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>
+

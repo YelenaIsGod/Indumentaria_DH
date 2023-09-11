@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <title>crear cuenta</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <%- include('./partials/header.ejs') %>
+
+    <baner class="banner">
+        <img src="images/banner.png" width="100%" alt="banner">
+    </baner>
+
+    <main>
+        <div class="register-contenedor">
+            <h2 class="register-titulo">Registrarse</h2>
+            <form action="/register" method="GET">
+                <div class="registro-formulario">
+                    <div class="datos">
+                        <input type="text" class="input-text" id="nombre" placeholder="Carla Moreno">
+                        <label for="nombre"> Nombre y Apellido</label>
+                    </div>
+                    <div class="datos">
+                        <input type="text" class="input-text" id="email" placeholder="usuario@gmail.com">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="datos">
+                        <input type="password" class="input-text" id="contraseña" placeholder="ingrese contraseña">
+                        <label for="contraseña">Contraseña</label>
+                    </div>
+                    <div class="datos">
+                        <input type="email" class="input-text" id="confirmarContraseña"
+                            placeholder="confirme contraseña">
+                        <label for="confirmarContraseña">Confirmar Contraseña</label>
+
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="submit" class="button-send">Enviar</button>
+                </div>
+
+        </div>
+    </main>
+
+    <!--FOOTER-->
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>
