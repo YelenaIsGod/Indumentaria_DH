@@ -1,0 +1,93 @@
+.body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.login-contenedor {
+    background-color: white;
+    max-width: 35%;
+    border-radius: 7px;
+    margin: 2.5em auto;
+    padding:2em ;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.login-titulo{
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.login-registrarse{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.login-registrarse a{
+    font-weight: 500;
+    color: black;
+    transition: color 450ms;
+}
+.login-registrarse a:hover{
+    color: blue;
+}
+
+.login-formulario {
+    margin-top: 15px;
+    display: grid;
+    gap: 20px;
+}
+
+.user-contenedor{
+    position: relative;
+}
+.input{
+    margin-bottom: 20px;
+    width: 100%;
+    background: none;
+    color: rgb(42, 41, 41);
+    font-size: 16px;
+    padding: 3px 5px;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 2px solid rgb(104, 97, 97);
+
+}
+.user-datos{
+    color: rgb(104, 97, 97);
+    cursor: pointer;
+
+}
+
+.button-send {
+    background-color: #4559aa;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 5px 10px;
+    transition: background-color 450ms;
+    width: 40%;
+    margin-bottom: 50px;
+}
+
+.button-send:hover {
+    background-color: #0022AA;
+    border: none;
+}
+
+.footer {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.user-contenedor, .password-contenedor, .buttons-contenedor {
+    margin-top: 40px;
+}
